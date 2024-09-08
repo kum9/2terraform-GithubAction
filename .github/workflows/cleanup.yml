@@ -32,6 +32,6 @@ jobs:
       run: terraform plan -destroy -out=tfplan-destroy
       working-directory: ./Terraform-VPC
 
-    - name: 'Terraform Apply Destroy'
-      run: terraform destroy -auto-approve tfplan-destroy
+    - name: 'Terraform Destroy'
+      run: terraform destroy -auto-approve
       working-directory: ./Terraform-VPC
