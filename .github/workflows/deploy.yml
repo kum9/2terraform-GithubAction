@@ -4,7 +4,7 @@ run-name: ${{ github.actor }} has triggered the pipeline
 on:
   push:
     branches:
-      - 'feature'
+      - 'main'
 
 env:
   AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
