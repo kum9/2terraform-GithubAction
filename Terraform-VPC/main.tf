@@ -21,6 +21,3 @@ module "alb" {
   vpc_id = module.vpc.vpc_id
   instances = module.ec2.instances
 }
-
-
-
