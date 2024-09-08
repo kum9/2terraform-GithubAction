@@ -34,4 +34,3 @@ resource "aws_lb_target_group_attachment" "tga" {
   target_id        = var.instances[count.index]
   port             = 80
 }
-

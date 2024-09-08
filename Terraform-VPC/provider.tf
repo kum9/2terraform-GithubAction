@@ -1,18 +1,18 @@
 terraform {
   required_providers {
     aws = {
-      source = "hashicorp/aws"
+      source  = "hashicorp/aws"
       version = "5.16.1"
     }
   }
 
   backend "s3" {
-    bucket = "terraform-remote-backend-s3"
+    bucket = "terraform-remote-backend-s3-save"
     key    = "dev/terraform.tfstate"
-    region = "us-east-1"
+    region = "ap-south-1"
   }
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-south-1"
 }
