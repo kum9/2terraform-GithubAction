@@ -5,13 +5,17 @@ terraform {
       version = "5.10.0"
     }
   }
+  backend "s3" {
+    bucket = "terraform-remote-backend-s3-save"
+    key    = "dev/terraform.tfstate"
+    region = "us-east-1"
+  }
 }
 
 
 provider "aws" {
   # Configuration options
   region = "ap-south-1"
-  profile = "env"
 }
 
 
