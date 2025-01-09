@@ -8,14 +8,14 @@ terraform {
   backend "s3" {
     bucket = "terraform-remote-backend-s3-save00"
     key    = "dev/terraform.tfstate"
-    region = "ap-south-1"
+    region = "us-east-1"
   }
 }
 
 
 provider "aws" {
   # Configuration options
-  region = "ap-south-1"
+  region = "u-east-1"
 }
 
 
